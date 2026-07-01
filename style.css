@@ -492,3 +492,134 @@ section{
 }
 
 }
+
+/* ===========================
+   GLOBAL SAFETY FIX
+=========================== */
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   NAVBAR FIX (RESPONSIVE STRONG)
+=========================== */
+
+@media (max-width: 900px) {
+
+nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 5%;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+}
+
+/* ===========================
+   HERO FIX (MOBILE ALIGNMENT)
+=========================== */
+
+@media (max-width: 768px) {
+
+.hero {
+    padding-top: 140px;
+    min-height: auto;
+}
+
+.overlay h1 {
+    font-size: 38px;
+}
+
+.overlay h2 {
+    font-size: 26px;
+}
+
+.overlay h3 {
+    font-size: 30px;
+}
+
+.baby {
+    width: 180px;
+    height: 180px;
+}
+
+}
+
+/* ===========================
+   CARDS FIX (NO OVERFLOW)
+=========================== */
+
+@media (max-width: 768px) {
+
+.cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+}
+
+}
+
+/* ===========================
+   COUNTDOWN FIX
+=========================== */
+
+@media (max-width: 768px) {
+
+#timer {
+    gap: 10px;
+}
+
+#timer div {
+    width: 45%;
+}
+
+}
+
+/* ===========================
+   GALLERY FIX (BEST MOBILE LOOK)
+=========================== */
+
+@media (max-width: 768px) {
+
+.images {
+    flex-direction: column;
+    align-items: center;
+}
+
+.images img {
+    width: 90%;
+    height: auto;
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE (EXTRA CLEAN)
+=========================== */
+
+@media (max-width: 480px) {
+
+.overlay h1 {
+    font-size: 30px;
+}
+
+.overlay h2 {
+    font-size: 20px;
+}
+
+.btn {
+    width: 80%;
+    text-align: center;
+}
+
+}
