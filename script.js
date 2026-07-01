@@ -4,7 +4,7 @@
 // ===============================
 
 // Apni Event Date yahan change kar den
-const eventDate = new Date("July 05, 2026 09:00:00").getTime();
+const eventDate = new Date("July 05, 2026 08:30:00").getTime();
 
 const countdown = setInterval(() => {
 
