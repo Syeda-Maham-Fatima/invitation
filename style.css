@@ -1,0 +1,494 @@
+/* ===========================
+   Google Font & Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff8fb;
+    color:#444;
+    overflow-x:hidden;
+}
+
+/* ===========================
+      Floating Hearts
+=========================== */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:1;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    color:#ff6fa5;
+    font-size:20px;
+    animation:float 12s linear infinite;
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+    animation-duration:9s;
+}
+
+.hearts span:nth-child(2){
+    left:30%;
+    font-size:28px;
+    animation-duration:12s;
+}
+
+.hearts span:nth-child(3){
+    left:50%;
+    animation-duration:10s;
+}
+
+.hearts span:nth-child(4){
+    left:70%;
+    font-size:24px;
+    animation-duration:13s;
+}
+
+.hearts span:nth-child(5){
+    left:90%;
+    animation-duration:11s;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/* ===========================
+        Navigation
+=========================== */
+
+nav{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(255,255,255,.95);
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+z-index:1000;
+
+}
+
+.logo{
+
+font-family:'Great Vibes',cursive;
+font-size:35px;
+color:#ff4f8b;
+
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:#555;
+font-weight:600;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff4f8b;
+
+}
+
+/* ===========================
+         Hero
+=========================== */
+
+
+
+.hero{
+    min-height: 100vh;
+    padding-top: 120px;   /* 👈 YE MAIN FIX HAI */
+    background: linear-gradient(rgba(255,192,203,.45),
+    rgba(255,255,255,.45)),
+    url("images/WhatsApp\ Image\ 2026-07-02\ at\ 12.28.00\ AM.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay{
+    padding: 120px 20px 20px;
+}
+
+.overlay h3{
+
+font-family:'Great Vibes',cursive;
+font-size:45px;
+color:#d63384;
+
+}
+
+.overlay h1{
+
+font-size:70px;
+margin:10px 0;
+color:#ff4f8b;
+
+}
+
+.overlay h2{
+
+font-size:40px;
+color:#444;
+
+}
+
+.overlay p{
+
+font-size:22px;
+margin-top:10px;
+
+}
+
+.baby{
+
+width:260px;
+height:260px;
+border-radius:50%;
+margin:30px 0;
+object-fit:cover;
+border:8px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+/* ===========================
+          Button
+=========================== */
+
+.btn{
+
+display:inline-block;
+padding:14px 35px;
+background:#ff4f8b;
+color:white;
+border-radius:50px;
+text-decoration:none;
+font-size:18px;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:#d63384;
+transform:translateY(-4px);
+
+}
+
+/* ===========================
+       Common Section
+=========================== */
+
+section{
+
+padding:90px 8%;
+text-align:center;
+
+}
+
+section h2{
+
+font-size:42px;
+color:#ff4f8b;
+margin-bottom:25px;
+
+}
+
+section p{
+
+font-size:18px;
+line-height:1.9;
+
+}
+
+/* ===========================
+      Event Details
+=========================== */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    width:280px;
+    background:#fff;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(255,79,139,.25);
+}
+
+.card i{
+    font-size:50px;
+    color:#ff4f8b;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+.card p{
+    font-size:18px;
+}
+
+/* ===========================
+      Countdown
+=========================== */
+
+.countdown{
+    background:#ffeef5;
+}
+
+#timer{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+#timer div{
+    width:130px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+#timer span{
+    display:block;
+    font-size:42px;
+    font-weight:bold;
+    color:#ff4f8b;
+}
+
+#timer small{
+    font-size:18px;
+    color:#555;
+}
+
+/* ===========================
+         Gallery
+=========================== */
+
+.images{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.images img{
+    width:300px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.images img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+          Dua
+=========================== */
+
+.dua{
+    background:#fff0f6;
+}
+
+.dua p{
+    max-width:800px;
+    margin:auto;
+    font-size:22px;
+    color:#555;
+    line-height:2;
+}
+
+/* ===========================
+        Location
+=========================== */
+
+.location{
+    background:#fff;
+}
+
+/* ===========================
+         Footer
+=========================== */
+
+footer{
+    background:#ff4f8b;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+footer h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:18px;
+}
+
+/* ===========================
+     Responsive Design
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+.overlay h1{
+    font-size:48px;
+}
+
+.overlay h2{
+    font-size:30px;
+}
+
+.overlay h3{
+    font-size:34px;
+}
+
+.baby{
+    width:200px;
+    height:200px;
+}
+
+section h2{
+    font-size:34px;
+}
+
+.images img{
+    width:90%;
+    height:auto;
+}
+
+.card{
+    width:100%;
+}
+
+#timer div{
+    width:120px;
+}
+
+}
+
+@media(max-width:600px){
+
+.logo{
+    font-size:28px;
+}
+
+.overlay h1{
+    font-size:36px;
+}
+
+.overlay h2{
+    font-size:24px;
+}
+
+.overlay h3{
+    font-size:28px;
+}
+
+.overlay p{
+    font-size:18px;
+}
+
+.btn{
+    padding:12px 28px;
+    font-size:16px;
+}
+
+#timer{
+    gap:15px;
+}
+
+#timer div{
+    width:100px;
+    padding:18px;
+}
+
+#timer span{
+    font-size:30px;
+}
+
+section{
+    padding:70px 20px;
+}
+
+}
